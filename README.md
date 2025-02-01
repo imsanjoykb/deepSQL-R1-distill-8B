@@ -159,6 +159,19 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 - **Query Optimization (%)** → Evaluates efficiency in structuring optimized queries.  
 - **Latency (ms)** → Measures response time (lower is better).  
 
+![alt text](result/evals.png "evals")
+
+## LLM Performance Comparison on SQL Tasks
+| Rank | LLM Name                   | SQL Syntax Correctness (%) | Join Handling (%) | Aggregation Accuracy (%) | Nested Query Performance (%) | SELECT Queries (%) | INSERT Queries (%) | UPDATE Queries (%) | DELETE Queries (%) | JOIN Performance (%) | Transaction Handling (%) |
+|------|----------------------------|----------------------------|-------------------|--------------------------|-----------------------------|---------------------|---------------------|---------------------|---------------------|----------------------|---------------------------|
+| 1️⃣  | GPT-4o                     | 90                         | 90                | 92                       | 88                          | 95                  | 90                  | 88                  | 87                  | 91                   | 89                        |
+| 2️⃣  | deepSQL-R1-distill-8B       | 87                         | 87                | 89                       | 84                          | 92                  | 87                  | 85                  | 83                  | 88                   | 86                        |
+| 3️⃣  | deepseek-R1                 | 83                         | 83                | 85                       | 80                          | 89                  | 84                  | 81                  | 79                  | 85                   | 83                        |
+| 4️⃣  | Claude-3-Sonnet             | 79                         | 79                | 81                       | 76                          | 86                  | 80                  | 78                  | 75                  | 81                   | 78                        |
+| 5️⃣  | llama3.2                    | 75                         | 75                | 77                       | 72                          | 82                  | 76                  | 74                  | 71                  | 77                   | 74                        |
+| 6️⃣  | Mistral-7B                  | 70                         | 70                | 72                       | 68                          | 78                  | 72                  | 70                  | 68                  | 72                   | 70                        |
+
+
 
 
 ## Citing
@@ -174,4 +187,3 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 # Uploaded  model
 
 - **Developed by:** [Sanjoy Biswas](https://www.linkedin.com/in/imsanjoykb/) 
-- **License:** apache-2.0
