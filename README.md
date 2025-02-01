@@ -11,7 +11,7 @@ library_name2: transformers
 tags:
 - unsloth,
 - pytorch,
-- deepsee-R1,
+- deepseek-R1,
 - inference-endpoint,
 - sql-code-generation,
 ---
