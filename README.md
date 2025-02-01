@@ -29,6 +29,46 @@ tags:
 
 </div>
 
+## Model Download
+|            **Model**            | **#Total Params** | **#Active Params** | **Context Length** |                         **Download**                         |
+| :-----------------------------: | :---------------: | :----------------: | :----------------: | :----------------------------------------------------------: |
+|   deepSQL-R1-distill-8B         |        8B        |        6B        |        128k        | [🤗 HuggingFace](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B) |
+
+## Benchmarking
+## 📊 SQL Model Benchmarking - Comprehensive Evaluation
+
+| Rank | LLM Name                   | SqlEval-Classic (%) | Execution Accuracy (%) | Query Optimization (%) | Latency (ms) |
+|------|----------------------------|---------------------|-----------------------|-----------------------|--------------|
+| 1️⃣  | GPT-4o                     | 86                  | 91                    | 88                    | 120          |
+| 2️⃣  | deepSQL-R1-distill-8B       | 82                  | 89                    | 85                    | 110          |
+| 3️⃣  | deepseek-R1                 | 78                  | 84                    | 86                    | 150          |
+| 4️⃣  | Claude-3-Sonnet             | 72                  | 8o                    | 80                    | 130          |
+| 5️⃣  | llama3.2                    | 68                  | 72                    | 76                    | 170          |
+| 6️⃣  | Mistral-7B                  | 62                  | 76                    | 69                    | 190          |
+
+🚀 **Key Insights:**  
+- **GPT-4o** leads in overall performance, achieving **91% execution accuracy** with low latency (**120ms**).  
+- **deepSQL-R1-distill-8B** excels in query execution & optimization, making it a strong competitor.  
+- **Mistral-7B** has the lowest scores but may improve with fine-tuning.  
+
+🔹 **New Metrics Explained:**  
+- **Execution Accuracy (%)** → Measures correctness of SQL execution.  
+- **Query Optimization (%)** → Evaluates efficiency in structuring optimized queries.  
+- **Latency (ms)** → Measures response time (lower is better).  
+
+![alt text](result/evals.png "evals")
+
+## LLM Performance Comparison on SQL Tasks
+| Rank | LLM Name                   | SQL Syntax Correctness (%) | Join Handling (%) | Aggregation Accuracy (%) | Nested Query Performance (%) | SELECT Queries (%) | INSERT Queries (%) | UPDATE Queries (%) | DELETE Queries (%) | JOIN Performance (%) | Transaction Handling (%) |
+|------|----------------------------|----------------------------|-------------------|--------------------------|-----------------------------|---------------------|---------------------|---------------------|---------------------|----------------------|---------------------------|
+| 1️⃣  | GPT-4o                     | 90                         | 90                | 92                       | 88                          | 95                  | 90                  | 88                  | 87                  | 91                   | 89                        |
+| 2️⃣  | deepSQL-R1-distill-8B       | 87                         | 87                | 89                       | 84                          | 92                  | 87                  | 85                  | 83                  | 88                   | 86                        |
+| 3️⃣  | deepseek-R1                 | 83                         | 83                | 85                       | 80                          | 89                  | 84                  | 81                  | 79                  | 85                   | 83                        |
+| 4️⃣  | Claude-3-Sonnet             | 79                         | 79                | 81                       | 76                          | 86                  | 80                  | 78                  | 75                  | 81                   | 78                        |
+| 5️⃣  | llama3.2                    | 75                         | 75                | 77                       | 72                          | 82                  | 76                  | 74                  | 71                  | 77                   | 74                        |
+| 6️⃣  | Mistral-7B                  | 70                         | 70                | 72                       | 68                          | 78                  | 72                  | 70                  | 68                  | 72                   | 70                        |
+
+
 
 ## Inference
 
@@ -132,46 +172,6 @@ text_streamer = TextStreamer(tokenizer)
 # Generate the output using the model with TextStreamer
 _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 ```
-## Model Download
-|            **Model**            | **#Total Params** | **#Active Params** | **Context Length** |                         **Download**                         |
-| :-----------------------------: | :---------------: | :----------------: | :----------------: | :----------------------------------------------------------: |
-|   deepSQL-R1-distill-8B         |        8B        |        6B        |        128k        | [🤗 HuggingFace](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B) |
-
-## Benchmarking
-## 📊 SQL Model Benchmarking - Comprehensive Evaluation
-
-| Rank | LLM Name                   | SqlEval-Classic (%) | Execution Accuracy (%) | Query Optimization (%) | Latency (ms) |
-|------|----------------------------|---------------------|-----------------------|-----------------------|--------------|
-| 1️⃣  | GPT-4o                     | 86                  | 91                    | 88                    | 120          |
-| 2️⃣  | deepSQL-R1-distill-8B       | 82                  | 89                    | 85                    | 110          |
-| 3️⃣  | deepseek-R1                 | 78                  | 84                    | 86                    | 150          |
-| 4️⃣  | Claude-3-Sonnet             | 72                  | 8o                    | 80                    | 130          |
-| 5️⃣  | llama3.2                    | 68                  | 72                    | 76                    | 170          |
-| 6️⃣  | Mistral-7B                  | 62                  | 76                    | 69                    | 190          |
-
-🚀 **Key Insights:**  
-- **GPT-4o** leads in overall performance, achieving **91% execution accuracy** with low latency (**120ms**).  
-- **deepSQL-R1-distill-8B** excels in query execution & optimization, making it a strong competitor.  
-- **Mistral-7B** has the lowest scores but may improve with fine-tuning.  
-
-🔹 **New Metrics Explained:**  
-- **Execution Accuracy (%)** → Measures correctness of SQL execution.  
-- **Query Optimization (%)** → Evaluates efficiency in structuring optimized queries.  
-- **Latency (ms)** → Measures response time (lower is better).  
-
-![alt text](result/evals.png "evals")
-
-## LLM Performance Comparison on SQL Tasks
-| Rank | LLM Name                   | SQL Syntax Correctness (%) | Join Handling (%) | Aggregation Accuracy (%) | Nested Query Performance (%) | SELECT Queries (%) | INSERT Queries (%) | UPDATE Queries (%) | DELETE Queries (%) | JOIN Performance (%) | Transaction Handling (%) |
-|------|----------------------------|----------------------------|-------------------|--------------------------|-----------------------------|---------------------|---------------------|---------------------|---------------------|----------------------|---------------------------|
-| 1️⃣  | GPT-4o                     | 90                         | 90                | 92                       | 88                          | 95                  | 90                  | 88                  | 87                  | 91                   | 89                        |
-| 2️⃣  | deepSQL-R1-distill-8B       | 87                         | 87                | 89                       | 84                          | 92                  | 87                  | 85                  | 83                  | 88                   | 86                        |
-| 3️⃣  | deepseek-R1                 | 83                         | 83                | 85                       | 80                          | 89                  | 84                  | 81                  | 79                  | 85                   | 83                        |
-| 4️⃣  | Claude-3-Sonnet             | 79                         | 79                | 81                       | 76                          | 86                  | 80                  | 78                  | 75                  | 81                   | 78                        |
-| 5️⃣  | llama3.2                    | 75                         | 75                | 77                       | 72                          | 82                  | 76                  | 74                  | 71                  | 77                   | 74                        |
-| 6️⃣  | Mistral-7B                  | 70                         | 70                | 72                       | 68                          | 78                  | 72                  | 70                  | 68                  | 72                   | 70                        |
-
-
 
 
 ## Citing
@@ -187,3 +187,14 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 # Uploaded  model
 
 - **Developed by:** [Sanjoy Biswas](https://www.linkedin.com/in/imsanjoykb/) 
+
+
+<p align="center">
+  <img src="https://images.seeklogo.com/logo-png/61/1/deepseek-ai-logo-png_seeklogo-611415.png?v=1957416057848123408" alt="DeepSeek" width="100"/>
+  <img src="https://ia801209.us.archive.org/26/items/github.com-unslothai-unsloth_-_2023-12-03_15-21-29/cover.jpg" alt="Unsloth" width="100"/>
+  <img src="https://wandb.ai/logo.png" alt="Weights & Biases" width="100"/>
+  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="100"/>
+  <img src="https://images.saasworthy.com/tr:w-160,h-0,c-at_max,e-sharpen-1/gradio_43063_logo_1681283997_9ue7l.jpg" alt="Gradio" width="100"/>
+</p>
+
+
