@@ -17,25 +17,6 @@ tags:
 ---
 ![alt text](assets/logomain.png "Repo banner")
 
-[![Hugging Face Model](https://img.shields.io/badge/HuggingFace-Model-orange?logo=huggingface)](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/145PP-oW50OMS1bYJaYuUphfufpsuOGWl/view?usp=sharing)
-[![Kaggle Notebooks](https://img.shields.io/badge/Kaggle-Notebooks-red?logo=kaggle)](https://www.kaggle.com/code/imsanjoykb/inference-deepsql-r1-distill-8b)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio App](https://img.shields.io/badge/chat-gradio-blue?logo=gradio)](https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio-Colab](https://img.shields.io/static/v1?label=Gradio&message=Colab&color=&labelColor=white&logo=gradio)](https://imsanjoykb-deepsql-r1-distill-8b.hf.space)
-[![arXiv](https://img.shields.io/badge/arXiv-Your_Paper_ID-B31B1B.svg)](https://arxiv.org/abs/Your_Paper_ID)
-
-
-### 🚀 Project Links
-
-[![Hugging Face Model](https://img.shields.io/badge/HuggingFace-Model-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B)
-[![Open In Colab](https://img.shields.io/badge/Open%20in%20Colab-FF6F00%2F000000?style=for-the-badge&logo=googlecolab&logoColor=white&labelColor=FF6F00)](https://drive.google.com/file/d/145PP-oW50OMS1bYJaYuUphfufpsuOGWl/view?usp=sharing)
-[![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/imsanjoykb/inference-deepsql-r1-distill-8b)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio App](https://img.shields.io/badge/Chat%20App-Gradio-0084FF?style=for-the-badge&logo=gradio&logoColor=white)](https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio-Colab](https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00)](https://imsanjoykb-deepsql-r1-distill-8b.hf.space)
-[![arXiv Paper](https://img.shields.io/badge/arXiv-Preprint-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/Your_Paper_ID)
-
 <div align="center">
 
 [![Hugging Face Model](https://img.shields.io/badge/HuggingFace-Model-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B)
@@ -43,16 +24,10 @@ tags:
 [![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/imsanjoykb/inference-deepsql-r1-distill-8b)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imsanjoykb/deepSQL-R1-distill-8B)
 [![Gradio App](https://img.shields.io/badge/Chat%20App-Gradio-0084FF?style=for-the-badge&logo=gradio&logoColor=white)](https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio-Colab](https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00)](https://imsanjoykb-deepsql-r1-distill-8b.hf.space)
+[![Gradio-Colab](https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00)](https://colab.research.google.com/drive/1ze7qAQnjppZKfxNVBXXlOBTM6xFWEYrJ?usp=sharing)
 [![arXiv Paper](https://img.shields.io/badge/arXiv-Preprint-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/Your_Paper_ID)
 
 </div>
-
-
-
-Introducing the latest fine-tuned version of Qwen2.5-Coder-14B-Instruct, specifically tailored for SQL code generation. Built on the robust 14-billion parameter Qwen2.5-Coder architecture, this model leverages advanced configurations like bfloat16 precision and a custom quantization setup, optimized for efficient 4-bit computation. With a maximum context window of 32K tokens, this model supports extensive SQL sequences and complex query generation without compromising accuracy or performance.
-
-Our fine-tuning process has enriched this model with domain-specific SQL patterns and nuanced query constructions, making it exceptionally adept at handling real-world SQL requirements, from query creation to debugging and optimization. By combining Qwen2.5's foundational strengths with targeted training on custom SQL data, this model achieves a powerful balance of general-purpose code understanding and SQL-specific precision, making it an ideal tool for developers and data engineers seeking top-tier SQL generation capabilities.
 
 
 ## Inference
@@ -169,10 +144,10 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 |------|----------------------------|---------------------|-----------------------|-----------------------|--------------|
 | 1️⃣  | GPT-4o                     | 86                  | 91                    | 88                    | 120          |
 | 2️⃣  | deepSQL-R1-distill-8B       | 82                  | 89                    | 85                    | 110          |
-| 3️⃣  | deepseek-R1                 | 78                  | 84                    | 80                    | 130          |
-| 4️⃣  | Claude-3-Sonnet             | 72                  | 80                    | 76                    | 150          |
-| 5️⃣  | llama3.2                    | 68                  | 76                    | 72                    | 170          |
-| 6️⃣  | Mistral-7B                  | 62                  | 72                    | 69                    | 190          |
+| 3️⃣  | deepseek-R1                 | 78                  | 84                    | 86                    | 150          |
+| 4️⃣  | Claude-3-Sonnet             | 72                  | 8o                    | 80                    | 130          |
+| 5️⃣  | llama3.2                    | 68                  | 72                    | 76                    | 170          |
+| 6️⃣  | Mistral-7B                  | 62                  | 76                    | 69                    | 190          |
 
 🚀 **Key Insights:**  
 - **GPT-4o** leads in overall performance, achieving **91% execution accuracy** with low latency (**120ms**).  
