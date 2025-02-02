@@ -8,7 +8,12 @@
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imsanjoykb/deepSQL-R1-distill-8B)
 [![Gradio App](https://img.shields.io/badge/Chat%20App-Gradio-0084FF?style=for-the-badge&logo=gradio&logoColor=white)](https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B)
 [![Gradio-Colab](https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00)](https://colab.research.google.com/drive/1ze7qAQnjppZKfxNVBXXlOBTM6xFWEYrJ?usp=sharing)
-[![arXiv Paper](https://img.shields.io/badge/arXiv-Preprint-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/Your_Paper_ID)
+[![Figshare](https://img.shields.io/badge/Figshare-10.6084/m9.figshare.12345678-0085CA?style=for-the-badge&logo=figshare&logoColor=white)](https://doi.org/10.6084/m9.figshare.12345678)
+
+
+<p align="center">
+  <a href="https://doi.org/10.6084/m9.figshare.12345678"><b>Paper Link</b>👁️</a>
+</p>
 
 </div>
 
@@ -166,7 +171,8 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
   author = {Sanjoy Kumar},
   title = {DeepSQL-R1: A Quantized LLM for High-Performance and Reinforcement Driven NL2SQL Generation},
   year = {2025},
-  Model Link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B},
+  Paper = {https://doi.org/10.6084/m9.figshare.28330301.v1}
+  Model Link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B}
 }
 ```
 
