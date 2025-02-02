@@ -183,17 +183,23 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
   author = {Sanjoy Kumar},
   title = {DeepSQL-R1: A Quantized LLM for High-Performance and Reinforcement Driven NL2SQL Generation},
   year = {2025},
-  publisher link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B},
+  Model Link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B},
 }
 ```
 
-# Uploaded  model
+## Author
+<p>
+    <a href=mailto:imsanjoykb@gmail.com><img alt="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+    <a href="https://imsanjoykb.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"></a>
+    <a href="https://www.linkedin.com/in/imsanjoykb/"><img alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+    <a href="hhttps://github.com/imsanjoykb/"><img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+    <a href="https://www.kaggle.com/imsanjoykb"><img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white"></a>
+    <a href="https://instagram.com/imsanjoykb/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+    <a href="https://discord.com/channels/@imsanjoykb"><img alt="Instagram" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>   
+</p>
 
-- **Developed by:** [Sanjoy Biswas](https://www.linkedin.com/in/imsanjoykb/) 
-
-
+## Usages Services
 <p align="center">
-  <img src="https://images.seeklogo.com/logo-png/61/1/deepseek-ai-logo-png_seeklogo-611415.png" alt="DeepSeek" width="100"/>
   <img src="https://ia801209.us.archive.org/26/items/github.com-unslothai-unsloth_-_2023-12-03_15-21-29/cover.jpg" alt="Unsloth" width="100"/>
   <img src="https://wandb.ai/logo.png" alt="Weights & Biases" width="100"/>
   <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="100"/>
