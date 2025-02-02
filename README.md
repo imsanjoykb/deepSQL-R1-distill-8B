@@ -1,20 +1,3 @@
----
-license: apache-2.0
-language:
-- en
-base_model:
-- deepseek-ai/DeepSeek-R1
-new_version: imsanjoykb/deepSQL-R1-distill-8B
-pipeline_tag: text-generation
-library_name: adapter-transformers
-library_name2: transformers
-tags:
-- unsloth,
-- pytorch,
-- deepseek-R1,
-- inference-endpoint,
-- sql-code-generation,
----
 ![alt text](assets/logomain.png "Repo banner")
 
 <div align="center">
