@@ -188,22 +188,50 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 ```
 
 ## Author
-<p>
-    <a href=mailto:imsanjoykb@gmail.com><img alt="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-    <a href="https://imsanjoykb.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white"></a>
-    <a href="https://www.linkedin.com/in/imsanjoykb/"><img alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-    <a href="hhttps://github.com/imsanjoykb/"><img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-    <a href="https://www.kaggle.com/imsanjoykb"><img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white"></a>
-    <a href="https://instagram.com/imsanjoykb/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-    <a href="https://discord.com/channels/@imsanjoykb"><img alt="Instagram" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>   
-</p>
+<div align="center" style="line-height: 1;">
+    <a href="mailto:imsanjoykb@gmail.com" target="_blank" style="margin: 2px;">
+        <img alt="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://imsanjoykb.github.io/" target="_blank" style="margin: 2px;">
+        <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://www.linkedin.com/in/imsanjoykb/" target="_blank" style="margin: 2px;">
+        <img alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://orcid.org/0009-0001-6265-841X" target="_blank" style="margin: 2px;">
+        <img alt="ORCID" src="https://img.shields.io/badge/ORCID-0000--002--182-green?style=for-the-badge&logo=orcid&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://github.com/imsanjoykb/" target="_blank" style="margin: 2px;">
+        <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://medium.com/@imsanjoykb" target="_blank" style="margin: 2px;">
+        <img alt="Medium" src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://www.kaggle.com/imsanjoykb" target="_blank" style="margin: 2px;">
+        <img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://instagram.com/imsanjoykb/" target="_blank" style="margin: 2px;">
+        <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://discord.com/channels/@imsanjoykb" target="_blank" style="margin: 2px;">
+        <img alt="Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+</div>
 
 ## Usages Services
-<p align="center">
-  <img src="https://ia801209.us.archive.org/26/items/github.com-unslothai-unsloth_-_2023-12-03_15-21-29/cover.jpg" alt="Unsloth" width="100"/>
-  <img src="https://wandb.ai/logo.png" alt="Weights & Biases" width="100"/>
-  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="100"/>
-  <img src="https://images.saasworthy.com/tr:w-160,h-0,c-at_max,e-sharpen-1/gradio_43063_logo_1681283997_9ue7l.jpg" alt="Gradio" width="100"/>
-</p>
+<div align="center" style="line-height: 1;">
+    <a href="#" target="_blank" style="margin: 2px;">
+        <img src="https://ia801209.us.archive.org/26/items/github.com-unslothai-unsloth_-_2023-12-03_15-21-29/cover.jpg" alt="Unsloth" width="100" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="#" target="_blank" style="margin: 2px;">
+        <img src="https://wandb.ai/logo.png" alt="Weights & Biases" width="100" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="#" target="_blank" style="margin: 2px;">
+        <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="100" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="#" target="_blank" style="margin: 2px;">
+        <img src="https://images.saasworthy.com/tr:w-160,h-0,c-at_max,e-sharpen-1/gradio_43063_logo_1681283997_9ue7l.jpg" alt="Gradio" width="100" style="display: inline-block; vertical-align: middle;">
+    </a>
+</div>
 
 
