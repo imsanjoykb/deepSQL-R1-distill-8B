@@ -181,8 +181,8 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 ```
 @misc{,
   author = {Sanjoy Kumar},
-  title = {DeepSQL},
-  year = {2024},
+  title = {DeepSQL-R1: A Quantized LLM for High-Performance and Reinforcement Driven NL2SQL Generation},
+  year = {2025},
   publisher link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B},
 }
 ```
