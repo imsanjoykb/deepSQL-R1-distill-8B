@@ -193,7 +193,7 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 
 
 <p align="center">
-  <img src="https://images.seeklogo.com/logo-png/61/1/deepseek-ai-logo-png_seeklogo-611415.png?v=1957416057848123408" alt="DeepSeek" width="100"/>
+  <img src="https://images.seeklogo.com/logo-png/61/1/deepseek-ai-logo-png_seeklogo-611415.png" alt="DeepSeek" width="100"/>
   <img src="https://ia801209.us.archive.org/26/items/github.com-unslothai-unsloth_-_2023-12-03_15-21-29/cover.jpg" alt="Unsloth" width="100"/>
   <img src="https://wandb.ai/logo.png" alt="Weights & Biases" width="100"/>
   <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="100"/>
