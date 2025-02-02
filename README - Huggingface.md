@@ -1,20 +1,49 @@
-![alt text](assets/logomain.png "Repo banner")
-
+---
+license: apache-2.0
+language:
+- en
+base_model:
+- deepseek-ai/DeepSeek-R1
+new_version: imsanjoykb/deepSQL-R1-distill-8B
+pipeline_tag: text-generation
+library_name: adapter-transformers
+library_name2: transformers
+tags:
+- unsloth,
+- pytorch,
+- deepseek-R1,
+- inference-endpoint,
+- sql-code-generation,
+metrics:
+- accuracy
+- bleu
+---
 <div align="center">
+  <img src="https://raw.githubusercontent.com/imsanjoykb/deepSQL-R1-distill-8B/refs/heads/master/assets/logomain.png" alt="Repo banner">
+</div>
 
-[![Hugging Face Model](https://img.shields.io/badge/HuggingFace-Model-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B)
-[![Open In Colab](https://img.shields.io/badge/Open%20in%20Colab-FF6F00%2F000000?style=for-the-badge&logo=googlecolab&logoColor=white&labelColor=FF6F00)](https://drive.google.com/file/d/145PP-oW50OMS1bYJaYuUphfufpsuOGWl/view?usp=sharing)
-[![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/code/imsanjoykb/inference-deepsql-r1-distill-8b)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio App](https://img.shields.io/badge/Chat%20App-Gradio-0084FF?style=for-the-badge&logo=gradio&logoColor=white)](https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B)
-[![Gradio-Colab](https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00)](https://colab.research.google.com/drive/1ze7qAQnjppZKfxNVBXXlOBTM6xFWEYrJ?usp=sharing)
-[![Figshare](https://img.shields.io/badge/Figshare-10.6084/m9.figshare.12345678-0085CA?style=for-the-badge&logo=figshare&logoColor=white)](https://doi.org/10.6084/m9.figshare.12345678)
-
-
-<p align="center">
-  <a href="https://doi.org/10.6084/m9.figshare.12345678"><b>Paper Link</b>👁️</a>
-</p>
-
+<div align="center" style="line-height: 1;">
+    <a href="https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B" target="_blank" style="margin: 2px;">
+        <img alt="Hugging Face Model" src="https://img.shields.io/badge/HuggingFace-Model-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://drive.google.com/file/d/145PP-oW50OMS1bYJaYuUphfufpsuOGWl/view?usp=sharing" target="_blank" style="margin: 2px;">
+        <img alt="Open In Colab" src="https://img.shields.io/badge/Open%20in%20Colab-FF6F00%2F000000?style=for-the-badge&logo=googlecolab&logoColor=white&labelColor=FF6F00" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://www.kaggle.com/code/imsanjoykb/inference-deepsql-r1-distill-8b" target="_blank" style="margin: 2px;">
+        <img alt="Kaggle Notebook" src="https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://github.com/imsanjoykb/deepSQL-R1-distill-8B" target="_blank" style="margin: 2px;">
+        <img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://huggingface.co/spaces/imsanjoykb/deepSQL-R1-distill-8B" target="_blank" style="margin: 2px;">
+        <img alt="Gradio App" src="https://img.shields.io/badge/Chat%20App-Gradio-0084FF?style=for-the-badge&logo=gradio&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://colab.research.google.com/drive/1ze7qAQnjppZKfxNVBXXlOBTM6xFWEYrJ?usp=sharing" target="_blank" style="margin: 2px;">
+        <img alt="Gradio-Colab" src="https://img.shields.io/badge/Gradio-Colab-0084FF?style=for-the-badge&logo=gradio&labelColor=F9AB00" style="display: inline-block; vertical-align: middle;">
+    </a>
+    <a href="https://arxiv.org/abs/Your_Paper_ID" target="_blank" style="margin: 2px;">
+        <img alt="arXiv Paper" src="https://img.shields.io/badge/arXiv-Preprint-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" style="display: inline-block; vertical-align: middle;">
+    </a>
 </div>
 
 ## Abstract
@@ -47,7 +76,7 @@ State-of-the-art advances in LLMs have pushed NLP to its limits, where even comp
 - **Query Optimization (%)** → Evaluates efficiency in structuring optimized queries.  
 - **Latency (ms)** → Measures response time (lower is better).  
 
-![alt text](results/evals.png "evals")
+![alt text](https://raw.githubusercontent.com/imsanjoykb/deepSQL-R1-distill-8B/refs/heads/master/results/evals.png "evals")
 
 ## LLM Performance Comparison on SQL Tasks
 | Rank | LLM Name                   | SQL Syntax Correctness (%) | Join Handling (%) | Aggregation Accuracy (%) | Nested Query Performance (%) | SELECT Queries (%) | INSERT Queries (%) | UPDATE Queries (%) | DELETE Queries (%) | JOIN Performance (%) | Transaction Handling (%) |
@@ -58,8 +87,6 @@ State-of-the-art advances in LLMs have pushed NLP to its limits, where even comp
 | 4️⃣  | Claude-3-Sonnet             | 79                         | 79                | 81                       | 76                          | 86                  | 80                  | 78                  | 75                  | 81                   | 78                        |
 | 5️⃣  | llama3.2                    | 75                         | 75                | 77                       | 72                          | 82                  | 76                  | 74                  | 71                  | 77                   | 74                        |
 | 6️⃣  | Mistral-7B                  | 70                         | 70                | 72                       | 68                          | 78                  | 72                  | 70                  | 68                  | 72                   | 70                        |
-
-
 
 ## Inference
 
@@ -164,15 +191,13 @@ text_streamer = TextStreamer(tokenizer)
 _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
 ```
 
-
 ## Citing
 ```
 @misc{,
   author = {Sanjoy Kumar},
   title = {DeepSQL-R1: A Quantized LLM for High-Performance and Reinforcement Driven NL2SQL Generation},
   year = {2025},
-  Paper = {https://doi.org/10.6084/m9.figshare.28330301.v1},
-  Model Link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B}
+  Model Link = {https://huggingface.co/imsanjoykb/deepSQL-R1-distill-8B},
 }
 ```
 
@@ -222,5 +247,3 @@ _ = model.generate(**inputs, streamer=text_streamer, max_new_tokens=350)
         <img src="https://images.saasworthy.com/tr:w-160,h-0,c-at_max,e-sharpen-1/gradio_43063_logo_1681283997_9ue7l.jpg" alt="Gradio" width="100" style="display: inline-block; vertical-align: middle;">
     </a>
 </div>
-
-
